@@ -15,4 +15,9 @@ test('Amod Mahajan Locators', async ({ page }) => {
      await expect(page.getByText("   Trimmed text here   ",{exact:true})).toBeVisible();
 
       await expect(page.getByText("  This is a paragraph  with multiple lines and some extra     spaces.",{exact:true})).toBeVisible();
+
+      
+     await expect(page.getByText("Parent Child",{exact:true})).toBeVisible();
+
+
 })
