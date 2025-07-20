@@ -9,7 +9,7 @@ test('has title', async ({ page }) => {
   await page.getByLabel('Surname').fill('kishan@123');
 
   const dropDownDay=page.getByLabel('Day');
-  dropDownDay.selectOption('15');
+  dropDownDay.selectOption('15').get;
 
   const dropDownMonth=page.getByLabel('Month');
   dropDownMonth.selectOption('10');
